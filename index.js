@@ -1,5 +1,5 @@
 
-function kiemtrasonguyento(n){
+function kiemTraSoNguyenTo(n){
     var flag = true;
 
     if (n < 2) {
@@ -29,15 +29,15 @@ function danhSachSoNguyenTo()
     var n = document.getElementById("txt-n").value*1;
     var html = '';
     if(n<2){
-            document.getElementById("insont").innerHTML = `<h2 class="mt-5 text-danger text-center">
+            document.getElementById("inSoNT").innerHTML = `<h2 class="mt-5 text-danger text-center">
             Không có số nguyên tố</h2>`;
     return 0;
     }
     for (var i = 1; i <= n; i++) {
-        if (kiemtrasonguyento(i)){
+        if (kiemTraSoNguyenTo(i)){
             html += i + ' ';
         }
     }
-    document.getElementById("insont").innerHTML = `<h2 class="mt-5 text-danger text-center">
+    document.getElementById("inSoNT").innerHTML = `<h2 class="mt-5 text-danger text-center">
     Dãy số nguyên tố là: ${html} </h2>`;
 }
